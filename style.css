@@ -1,0 +1,189 @@
+body {
+    background-color: #f9f9f9; /* already there */
+    color: #333; /* already there */
+    font-family: Arial, sans-serif; /* already there */
+    margin: 0; /* already there */
+    padding: 0; /* already there */
+    line-height: 1; /* added to reduce spacing between lines */
+    transition: background-color 0.3s, color 0.3s; /* ADD THIS LINE */
+}
+
+header {
+    background-color :blue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+main img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+footer {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: auto;
+    width: 100%;
+    bottom: 0;
+    background-color: blue;
+}
+p {
+    font-size: 1.1em;
+}
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+img {
+    border: 5px solid #4CAF50;
+    border-radius: 10px;
+}
+main a[href^="mailto:"] {
+    color: #ff5722;
+    font-weight: bold;
+}
+body.dark-mode {
+    background-color: #333333; /* Dark background */
+    color: #f9f9f9; /* Light text */
+}
+body.dark-mode nav { background-color: #222222; }
+#theme-toggle { padding: 8px 16px; cursor: pointer; margin: 10px; }
+#typing-headline {
+    min-height: 10px;
+    border-right: 3px solid #4CAF50;
+    display: inline-block;
+    animation: blink 0.75s step-end infinite;
+}
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: #4CAF50; }
+}
+#back-to-top {
+    display: none;
+    position: auto;
+    bottom: 20px;
+    right: 20px;
+    background-color: blue;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s,;
+}
+#back-to-top:hover {
+    background-color: white;
+}
+.filter-btn {
+    padding: 8px 16px; margin: 5px;
+    border: 1px solid blue; 
+    background: white; color: blue;
+    cursor: pointer; border-radius: 4px;
+}
+.filter-btn.active { background: blue; color: white; }
+.project-card { transition: all 0.3s; margin: 15px; padding 15px;
+border: 1px solid #ddd; border-radius: 8px; }
+.project-card.hidden { display: none; }
+.funfact-container { 
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    text-align: center;
+}
+#reveal-fact {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#reveal-fact:hover {
+    background-color: #45a049;
+}
+.hiddenfact {
+    display: none;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    animation: fadeIn 0.5s;
+}
+.hiddenfact.show {
+    display: block;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* Services grid container */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+/* First 4 cards - stay in their natural 4-column layout */
+.service-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+/* Image styling - fixed height for uniformity */
+.service-card img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: cover; /* Ensure images fill the area without distortion */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+}
+.service-card h3 {
+    margin: 12px 0 6px;
+    font-size: 16px;
+}
+.service-card p {
+    font-size: 14px;
+    color: #888;
+    line-height: 1,5;
+}
+.background-image {
+    background-image: url('background image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
