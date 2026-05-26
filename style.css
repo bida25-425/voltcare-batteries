@@ -83,7 +83,7 @@ body.dark-mode nav { background-color: #222222; }
 }
 #back-to-top {
     display: none;
-    position: auto;
+    position: bottom;
     bottom: 20px;
     right: 20px;
     background-color: blue;
@@ -99,6 +99,7 @@ body.dark-mode nav { background-color: #222222; }
 }
 #back-to-top:hover {
     background-color: white;
+    position: bottom;
 }
 .filter-btn {
     padding: 8px 16px; margin: 5px;
