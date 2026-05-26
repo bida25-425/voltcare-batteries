@@ -6,7 +6,13 @@ toggleButton.addEventListener('click', function() {
         toggleButton.textContent = 'Light Mode';
     } else {
         toggleButton.textContent = 'Dark Mode';
-    }
+        //change button text based on mode 
+        if (document.body.classList.toggle contains( 'dark-mode' )) {
+            toggle.Btn.textContent = 'Light Mode';
+        } else {
+            toggle.BtntextContent = 'Dark Mode'
+              }
+    });
     const texts = [
         "Welcome to Voltcare Batteries!",
         "Your trusted source for quality reconditioned batteries.",
