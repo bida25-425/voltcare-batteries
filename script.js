@@ -38,18 +38,6 @@ toggleButton.addEventListener('click', function() {
         const speed = isDeleting ? 50 : 100;
         setTimeout(typeEffect, speed);
     }
-    typeEffect();
-    const backToTopButton = document.getElementById('back-to-top');
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 250) {
-            backToTopButton.style.display = 'block';
-        } else {
-            backToTopButton.style.display = 'none';
-        }
-    });
-    backToTopButton.addEventListener('click', function() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projects = document.querySelectorAll('.project-card');
 
